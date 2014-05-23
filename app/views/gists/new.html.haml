@@ -1,0 +1,7 @@
+%br
+%br
+%h4 Enter a new Gist URL:
+= form_for @gist, url: gists_path do |f|
+	= f.hidden_field :user_id, value: params[:user_id]
+	= f.text_field :gh_url
+	= f.subm

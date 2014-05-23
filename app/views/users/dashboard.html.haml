@@ -1,0 +1,6 @@
+%h3= "#{current_user.first_name}'s Profile"
+%br
+%br
+%h5 Projects
+- @current_user.gists.each do |f|
+	%p= f.name
